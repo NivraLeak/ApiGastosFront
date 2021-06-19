@@ -7,17 +7,23 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { OutcomeListComponent } from './components/outcome/outcome-list/outcome-list.component';
 import { HttpClientModule } from '@angular/common/http';
 import {MatButtonModule} from "@angular/material/button";
+import { AddOutcomeComponent } from './components/outcome/add-outcome/add-outcome.component';
+import {MatFormFieldModule} from "@angular/material/form-field";
+import {ReactiveFormsModule} from "@angular/forms";
 @NgModule({
   declarations: [
     AppComponent,
-    OutcomeListComponent
+    OutcomeListComponent,
+    AddOutcomeComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     HttpClientModule,
-    MatButtonModule
+    MatButtonModule,
+    MatFormFieldModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
